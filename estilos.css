@@ -8,6 +8,7 @@ body, html{
     width: 100%;
     min-height: 50vh;
     overflow: hidden;
+    margin: 0 auto;
 }
 
 body, html{
@@ -21,9 +22,11 @@ body, html{
     margin-top: 12rem;
     display: flex;
     justify-content: center;
-    column-gap: 22rem;
-    row-gap: 22rem;
-    gap: 10rem;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5rem;
+    row-gap: 5rem;
+    gap: 5rem;
 }
 .contenedor-principal{
     display: inline-grid;
@@ -32,7 +35,7 @@ body, html{
 }
 
 .botones{
-    margin: 2rem;
+    margin: 1rem;
     width: 14rem;
     height: 8rem;
     
@@ -48,6 +51,7 @@ body, html{
 
 }
 .rectangulo-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -56,6 +60,7 @@ body, html{
 
 }
 .triangulo-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -64,6 +69,7 @@ body, html{
 
 }
 .rombo-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -72,6 +78,7 @@ body, html{
 
 }
 .paralelograma-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -80,6 +87,7 @@ body, html{
 
 }
 .trapecio-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -88,6 +96,7 @@ body, html{
 
 }
 .poligonoRegular-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -95,6 +104,7 @@ body, html{
     animation-delay: 250ms;
 }
 .circulo-contenedor{
+    margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
     animation-iteration-count: 1;
@@ -102,6 +112,7 @@ body, html{
     animation-delay: 350ms;
 }
 #btn-cuadrado{
+    
     background-color: #F27E7E;
     width: 8rem;
     height: 8rem;
@@ -111,6 +122,8 @@ body, html{
     transform: scale(1.2)  translateY(-10px);
 }
 #btn-rectangulo{
+    width: 11rem;
+    height: 8rem;
     background-color: #8BC6D2;
     transition: .3s;
 }
@@ -118,7 +131,8 @@ body, html{
     transform: scale(1.2)  translateY(-10px);
 }
 #btn-rombo{
-    
+    width: 8rem;
+    height: 8rem;
     background-color: #E0EBB6;
     clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transition-property: clip-path;
@@ -132,7 +146,9 @@ body, html{
 
 
 #btn-triangulo{
-    background-color: #EDF09B;
+    width: 8rem;
+    height: 8rem;
+    background-color: #e9ed71;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     transition-property: clip-path;
     transition-duration: 3s;
@@ -145,6 +161,8 @@ body, html{
 
 
 #btn-paralelo{
+    width: 11rem;
+    height: 8rem;
     background-color: #C2B1D4;
     clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
     transition-property: clip-path;
@@ -157,6 +175,8 @@ body, html{
     transform: scale(1.2)  translateY(-10px);
 }
 #btn-trapecio{
+    width: 11rem;
+    height: 8rem;
     background-color: #C9E6CF;
     clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
     transition-property: clip-path;
@@ -169,6 +189,8 @@ body, html{
 }
 #btn-pentagono{
     background-color:#FABA92;
+    width: 8rem;
+    height: 8rem;
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
     transition-property: clip-path;
     transition-duration: 1s;
@@ -179,6 +201,8 @@ body, html{
     transform: scale(1.2)  translateY(-10px);
 }
 #btn-circulo{
+    width: 10rem;
+    height: 10rem;
     background-color: #6eaef3;
     clip-path: circle(35% at 50% 50%);
     transition-property: clip-path;
