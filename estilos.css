@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body, html{
+   
+    width: 100%;
+    min-height: 50vh;
+    overflow: hidden;
+}
+
+body, html{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(#F2EFE3,#F2EFE3);    
+}
+.contenedor{
+    
+    margin-top: 12rem;
+    display: flex;
+    justify-content: center;
+    column-gap: 22rem;
+    row-gap: 22rem;
+    gap: 10rem;
+}
+.contenedor-principal{
+    display: inline-grid;
+    grid-template-columns:repeat(4, 25%);
+    grid-template-rows: repeat (2, 100%)
+}
+
+.botones{
+    margin: 2rem;
+    width: 14rem;
+    height: 8rem;
+    
+   
+}
+.cuadrado-contenedor{
+    margin:0 auto;
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 0ms;
+
+}
+.rectangulo-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 100ms;
+
+}
+.triangulo-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 200ms;
+
+}
+.rombo-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 300ms;
+
+}
+.paralelograma-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 50ms;
+
+}
+.trapecio-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 150ms;
+
+}
+.poligonoRegular-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 250ms;
+}
+.circulo-contenedor{
+    animation-name: animacion;
+    animation-duration: 2s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 350ms;
+}
+#btn-cuadrado{
+    background-color: #F27E7E;
+    width: 8rem;
+    height: 8rem;
+    transition: .3s;
+}
+#btn-cuadrado:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+#btn-rectangulo{
+    background-color: #8BC6D2;
+    transition: .3s;
+}
+#btn-rectangulo:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+#btn-rombo{
+    
+    background-color: #E0EBB6;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition-property: clip-path;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+}
+#btn-rombo:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+
+
+#btn-triangulo{
+    background-color: #EDF09B;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    transition-property: clip-path;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+}
+#btn-triangulo:hover{
+    transform: scale(1.2)  translateY(-10px); 
+}
+
+
+#btn-paralelo{
+    background-color: #C2B1D4;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    transition-property: clip-path;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+    
+}
+#btn-paralelo:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+#btn-trapecio{
+    background-color: #C9E6CF;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+    transition-property: clip-path;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+}
+#btn-trapecio:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+#btn-pentagono{
+    background-color:#FABA92;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    transition-property: clip-path;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+}
+#btn-pentagono:hover{
+    transform: scale(1.2)  translateY(-10px);
+}
+#btn-circulo{
+    background-color: #6eaef3;
+    clip-path: circle(35% at 50% 50%);
+    transition-property: clip-path;
+    transition-duration: 3s;
+    transition-timing-function: ease-out;
+    transition: .3s;
+}
+#btn-circulo:hover{
+    transform: scale(1.2)  translateY(-10px);
+    
+}
+
+@keyframes animacion{
+    0%{
+        transform: translateY(300%);
+    }
+
+    80%{
+        transform: translateY(-35%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 640px) {
+
+
+    .contenedor{
+        display: flex;
+        justify-content: center;
+        align-content: space-around; 
+    }
+
+
+    .contenedor-principal{
+        margin-bottom: 5rem;
+        display: inline-grid;
+        grid-template-columns:repeat(2, 45%);
+        grid-template-rows: repeat (4, 100%);
+    }
+    .botones{
+        margin: 1rem;
+        width: 8rem;
+        height: 4rem;
+    }
+    
+
+}
