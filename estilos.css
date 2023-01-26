@@ -6,7 +6,7 @@
 body, html{
    
     width: 100%;
-    min-height: 50vh;
+    min-height: 100vh;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -17,8 +17,22 @@ body, html{
     background-size: cover;
     background: linear-gradient(#F2EFE3,#F2EFE3);    
 }
+.cuadro{
+    animation-name: cuadro;
+    animation-duration: 3.5s; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    position: absolute;
+    background-color:rgb(164, 87, 240);
+    opacity: 70%;
+    width: 100%;
+    height: 24rem;
+    z-index: -1;
+}
 .contenedor{
-    
+    position: relative;
+    z-index: 1;
     margin-top: 12rem;
     display: flex;
     justify-content: center;
@@ -29,9 +43,11 @@ body, html{
     gap: 5rem;
 }
 .contenedor-principal{
+    
+    height: 100%;
     display: inline-grid;
     grid-template-columns:repeat(4, 25%);
-    grid-template-rows: repeat (2, 100%)
+    grid-template-rows: repeat (2, 100%); 
 }
 
 .botones{
@@ -42,6 +58,9 @@ body, html{
    
 }
 .cuadrado-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -51,6 +70,9 @@ body, html{
 
 }
 .rectangulo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -60,6 +82,9 @@ body, html{
 
 }
 .triangulo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -69,6 +94,9 @@ body, html{
 
 }
 .rombo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -78,6 +106,9 @@ body, html{
 
 }
 .paralelograma-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -87,6 +118,9 @@ body, html{
 
 }
 .trapecio-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -96,6 +130,9 @@ body, html{
 
 }
 .poligonoRegular-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -104,6 +141,9 @@ body, html{
     animation-delay: 250ms;
 }
 .circulo-contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin:0 auto;
     animation-name: animacion;
     animation-duration: 2s; 
@@ -112,15 +152,21 @@ body, html{
     animation-delay: 350ms;
 }
 #btn-cuadrado{
-    
     background-color: #F27E7E;
     width: 8rem;
     height: 8rem;
     transition: .3s;
 }
 #btn-cuadrado:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
 }
+/*#btn-cuadrado:active{
+    animation: mover 0.5s;
+    animation-iteration-count:3;
+}*/
 #btn-rectangulo{
     width: 11rem;
     height: 8rem;
@@ -128,7 +174,10 @@ body, html{
     transition: .3s;
 }
 #btn-rectangulo:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
 }
 #btn-rombo{
     width: 8rem;
@@ -141,7 +190,10 @@ body, html{
     transition: .3s;
 }
 #btn-rombo:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
 }
 
 
@@ -156,7 +208,10 @@ body, html{
     transition: .3s;
 }
 #btn-triangulo:hover{
-    transform: scale(1.2)  translateY(-10px); 
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1; 
+    animation-delay: 250ms;
 }
 
 
@@ -172,7 +227,10 @@ body, html{
     
 }
 #btn-paralelo:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
 }
 #btn-trapecio{
     width: 11rem;
@@ -185,7 +243,10 @@ body, html{
     transition: .3s;
 }
 #btn-trapecio:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
 }
 #btn-pentagono{
     background-color:#FABA92;
@@ -198,7 +259,11 @@ body, html{
     transition: .3s;
 }
 #btn-pentagono:hover{
-    transform: scale(1.2)  translateY(-10px);
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms;
+    
 }
 #btn-circulo{
     width: 10rem;
@@ -211,9 +276,12 @@ body, html{
     transition: .3s;
 }
 #btn-circulo:hover{
-    transform: scale(1.2)  translateY(-10px);
-    
+    transform: scale(1.1)  translateY(-10px);
+    animation: mover 0.5s;
+    animation-iteration-count: 1;
+    animation-delay: 250ms; 
 }
+
 
 @keyframes animacion{
     0%{
@@ -223,11 +291,34 @@ body, html{
     80%{
         transform: translateY(-35%);
     }
+
     100%{
         transform: translateY(0);
     }
 }
 
+@keyframes cuadro{
+    0%{
+        transform: translateX(-300%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes mover {
+    0% { transform: translate(1px, 1px) rotate(0deg) scale(1.1)  translateY(-10px); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg) scale(1.1)  translateY(-10px); }
+    20% { transform: translate(-3px, 0px) rotate(1deg) scale(1.1)  translateY(-10px); }
+    30% { transform: translate(3px, 2px) rotate(0deg) scale(1.1)  translateY(-10px); }
+    40% { transform: translate(1px, -1px) rotate(1deg) scale(1.1)  translateY(-10px); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg)scale(1.1)  translateY(-10px) ; }
+    60% { transform: translate(-3px, 1px) rotate(0deg) scale(1.1)  translateY(-10px); }
+    70% { transform: translate(3px, 1px) rotate(-1deg)scale(1.1)  translateY(-10px) ; }
+    80% { transform: translate(-1px, -1px) rotate(1deg)scale(1.1)  translateY(-10px) ; }
+    90% { transform: translate(1px, 2px) rotate(0deg) scale(1.1)  translateY(-10px); }
+    100% { transform: translate(1px, -2px) rotate(-1deg) scale(1.1)  translateY(-10px); }
+  }
 
 
 
